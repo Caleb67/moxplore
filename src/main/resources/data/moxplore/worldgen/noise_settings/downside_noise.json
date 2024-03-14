@@ -5,7 +5,7 @@
   "ore_veins_enabled": false,
   "legacy_random_source": true,
   "default_block": {
-    "Name": "minecraft:stone"
+    "Name": "moxplore:downstone"
   },
   "default_fluid": {
     "Name": "minecraft:water",

@@ -1,0 +1,8 @@
+{
+    "parent": "block/cube_bottom_top",
+    "textures": {
+        "bottom": "moxplore:block/down_grass_bottom",
+        "side": "moxplore:block/down_grass_side",
+        "top": "moxplore:block/downstone"
+    }
+  }

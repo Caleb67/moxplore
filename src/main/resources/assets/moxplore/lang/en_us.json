@@ -2,5 +2,7 @@
 "item.moxplore.copper_pickaxe":"Copper Pickaxe",
 "item.moxplore.copper_axe":"Copper Axe",
 "item.moxplore.copper_shovel":"Copper Shovel",
-"item.moxplore.copper_sword":"Copper Sword"
+"item.moxplore.copper_sword":"Copper Sword",
+"block.moxplore.downstone":"Downstone",
+"block.moxplore.down_grass":"Down Grass"
 }

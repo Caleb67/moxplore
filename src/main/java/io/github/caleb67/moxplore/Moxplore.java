@@ -6,6 +6,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import io.github.caleb67.moxplore.register.ModEquipment;
+import io.github.caleb67.moxplore.register.ModBlocks;
 import io.wispforest.owo.registration.reflect.FieldRegistrationHandler;
 
 public class Moxplore implements ModInitializer {
@@ -24,6 +25,7 @@ public class Moxplore implements ModInitializer {
 		LOGGER.info("Expanding the minecraft world...");
 
 		FieldRegistrationHandler.register(ModEquipment.class, MOD_ID, false);
+		FieldRegistrationHandler.register(ModBlocks.class, MOD_ID, false);
 
 	}
 }
