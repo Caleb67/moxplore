@@ -5,7 +5,7 @@
     "settings": "moxplore:downside_noise",
     "biome_source": {
       "type": "minecraft:fixed",
-      "biome": "minecraft:plains"
+      "biome": "moxplore:downside"
     }
   }
 }
