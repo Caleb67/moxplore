@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:the_nether",
+  "type": "moxplore:downside",
   "generator": {
     "type": "minecraft:noise",
     "settings": "moxplore:downside_noise",

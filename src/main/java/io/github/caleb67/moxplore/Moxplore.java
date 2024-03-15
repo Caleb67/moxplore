@@ -1,6 +1,10 @@
 package io.github.caleb67.moxplore;
 
 import net.fabricmc.api.ModInitializer;
+import net.kyrptonaught.customportalapi.api.CustomPortalBuilder;
+import net.minecraft.block.Blocks;
+import net.minecraft.item.Items;
+import net.minecraft.util.Identifier;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -26,6 +30,12 @@ public class Moxplore implements ModInitializer {
 
 		FieldRegistrationHandler.register(ModEquipment.class, MOD_ID, false);
 		FieldRegistrationHandler.register(ModBlocks.class, MOD_ID, false);
-
+		
+		CustomPortalBuilder.beginPortal()  
+        .frameBlock(Blocks.CRYING_OBSIDIAN)  
+        .lightWithItem(Items.POTION)  
+        .destDimID(new Identifier("moxplore:downside"))  
+        .tintColor(84, 65, 136)  
+        .registerPortal();
 	}
 }
