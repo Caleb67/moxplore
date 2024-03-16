@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " C ",
+        "ABA",
+        " A "
+    ],
+    "key": {
+        "A": {
+            "item": "minecraft:copper_ingot"
+        },
+        "B": {
+            "item": "minecraft:iron_bars"
+        },
+        "C": {
+            "tag": "minecraft:wool"
+        }
+    },
+    "result": {
+        "item": "moxplore:water_filter"
+    }
+}

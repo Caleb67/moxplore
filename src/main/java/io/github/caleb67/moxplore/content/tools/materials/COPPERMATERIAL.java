@@ -6,6 +6,8 @@ import net.minecraft.recipe.Ingredient;
 
 public class COPPERMATERIAL implements ToolMaterial {
 
+
+    // copper tools base stats
     public static final COPPERMATERIAL INSTANCE = new COPPERMATERIAL();
 
     @Override

@@ -11,6 +11,7 @@ import org.slf4j.LoggerFactory;
 
 import io.github.caleb67.moxplore.register.ModEquipment;
 import io.github.caleb67.moxplore.register.ModBlocks;
+import io.github.caleb67.moxplore.register.ModItems;
 import io.wispforest.owo.registration.reflect.FieldRegistrationHandler;
 
 public class Moxplore implements ModInitializer {
@@ -18,7 +19,7 @@ public class Moxplore implements ModInitializer {
 	// It is considered best practice to use your mod id as the logger's name.
 	// That way, it's clear which mod wrote info, warnings, and errors.
     public static final Logger LOGGER = LoggerFactory.getLogger("moxplore");
-	private static final String MOD_ID = "moxplore";
+	public static final String MOD_ID = "moxplore";
 
 	@Override
 	public void onInitialize() {
@@ -30,6 +31,7 @@ public class Moxplore implements ModInitializer {
 
 		FieldRegistrationHandler.register(ModEquipment.class, MOD_ID, false);
 		FieldRegistrationHandler.register(ModBlocks.class, MOD_ID, false);
+		FieldRegistrationHandler.register(ModItems.class, MOD_ID, false);
 		
 		CustomPortalBuilder.beginPortal()  
         .frameBlock(Blocks.CRYING_OBSIDIAN)  
@@ -37,5 +39,14 @@ public class Moxplore implements ModInitializer {
         .destDimID(new Identifier("moxplore:downside"))  
         .tintColor(84, 65, 136)  
         .registerPortal();
+
+		CustomPortalBuilder.beginPortal()  
+        .frameBlock(Blocks.POLISHED_DEEPSLATE)  
+        .destDimID(new Identifier("moxplore:plains"))  
+        .tintColor(95, 199, 45)  
+        .registerPortal();
+		
+		
 	}
 }
+

@@ -4,6 +4,10 @@
 "item.moxplore.copper_shovel":"Copper Shovel",
 "item.moxplore.copper_sword":"Copper Sword",
 "item.moxplore.copper_hoe":"Copper Hoe",
+"item.moxplore.water_filter":"Water Filter",
+
+"item.moxplore.water_filter.tooltip":"Diver's best friend",
+
 "block.moxplore.downstone":"Downstone",
 "block.moxplore.down_grass":"Down Grass"
 }
