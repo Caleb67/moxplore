@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ACA",
+        " B ",
+        " B "
+    ],
+    "key": {
+        "A": {
+            "item": "minecraft:iron_ingot"
+        },
+        "B": {
+            "item": "minecraft:stick"
+        },
+        "C": {
+            "item": "minecraft:iron_block"
+        }
+    },
+    "result": {
+        "item": "moxplore:iron_hammer"
+    }
+}

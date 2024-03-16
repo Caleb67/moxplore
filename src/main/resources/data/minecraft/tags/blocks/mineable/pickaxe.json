@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+      "moxplore:downstone",
+      "moxplore:down_grass",
+      "moxplore:neat_cobblestone",
+      "moxplore:neat_cobbled_deepslate"
+    ]
+  }

@@ -1,0 +1,16 @@
+{
+    "replace": false,
+    "values": [
+      "moxplore:chiseled_oak_planks",
+      "moxplore:chiseled_birch_planks",
+      "moxplore:chiseled_spruce_planks",
+      "moxplore:chiseled_dark_oak_planks",
+      "moxplore:chiseled_bamboo_planks",
+      "moxplore:chiseled_jungle_planks",
+      "moxplore:chiseled_mangrove_planks",
+      "moxplore:chiseled_cherry_planks",
+      "moxplore:chiseled_acacia_planks",
+      "moxplore:chiseled_crimson_planks",
+      "moxplore:chiseled_warped_planks"
+    ]
+  }

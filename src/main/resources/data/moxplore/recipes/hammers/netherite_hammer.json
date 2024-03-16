@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:smithing_trim",
+    "template": {
+        "item": "minecraft:netherite_upgrade_smithing_template"
+    },
+    "base": {
+        "item": "moxplore:diamond_hammer"
+    },
+    "addition": {
+        "item": "minecraft:netherite_block"
+    },
+    "result": {
+        "item": "moxplore:netherite_hammer"
+    }
+}

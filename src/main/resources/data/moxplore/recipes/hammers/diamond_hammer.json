@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ACA",
+        " B ",
+        " B "
+    ],
+    "key": {
+        "A": {
+            "item": "minecraft:diamond"
+        },
+        "B": {
+            "item": "minecraft:stick"
+        },
+        "C": {
+            "item": "minecraft:diamond_block"
+        }
+    },
+    "result": {
+        "item": "moxplore:diamond_hammer"
+    }
+}

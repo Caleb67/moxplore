@@ -4,10 +4,34 @@
 "item.moxplore.copper_shovel":"Copper Shovel",
 "item.moxplore.copper_sword":"Copper Sword",
 "item.moxplore.copper_hoe":"Copper Hoe",
+
 "item.moxplore.water_filter":"Water Filter",
 
 "item.moxplore.water_filter.tooltip":"Diver's best friend",
+"item.moxplore.diamond_hammer.tooltip":"7x7x7 Cube",
+"item.moxplore.iron_hammer.tooltip":"5x5x5 Cube",
+"item.moxplore.hammer.tooltip":"3x3x3 Cube",
+"item.moxplore.netherite_hammer.tooltip":"9x9x9 Cube",
+
+"item.moxplore.copper_hammer":"Copper Hammer",
+"item.moxplore.iron_hammer":"Iron Hammer",
+"item.moxplore.gold_hammer":"Gold Hammer",
+"item.moxplore.diamond_hammer":"Diamond Hammer",
+"item.moxplore.netherite_hammer":"Netherite Hammer",
 
 "block.moxplore.downstone":"Downstone",
-"block.moxplore.down_grass":"Down Grass"
+"block.moxplore.down_grass":"Down Grass",
+
+"block.moxplore.chiseled_oak_planks":"Chiseled Oak Planks",
+"block.moxplore.chiseled_acacia_planks":"Chiseled Acacia Planks",
+"block.moxplore.chiseled_warped_planks":"Chiseled Warped Planks",
+"block.moxplore.chiseled_crimson_planks":"Chiseled Crimson Planks",
+"block.moxplore.chiseled_dark_oak_planks":"Chiseled Dark Oak Planks",
+"block.moxplore.chiseled_jungle_planks":"Chiseled Jungle Planks",
+"block.moxplore.chiseled_mangrove_planks":"Chiseled Mangrove Planks",
+"block.moxplore.chiseled_spruce_planks":"Chiseled Spruce Planks",
+"block.moxplore.chiseled_birch_planks":"Chiseled Birch Planks",
+"block.moxplore.chiseled_bamboo_planks":"Chiseled Bamboo Planks",
+"block.moxplore.neat_cobblestone":"Neat Cobblestone",
+"block.moxplore.neat_cobbled_deepslate":"Neat Cobbled Deepslate"
 }
