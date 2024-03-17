@@ -12,6 +12,7 @@ import org.slf4j.LoggerFactory;
 import io.github.caleb67.moxplore.register.ModEquipment;
 import io.github.caleb67.moxplore.register.ModBlocks;
 import io.github.caleb67.moxplore.register.ModItems;
+import io.github.caleb67.moxplore.register.ModPortals;
 import io.wispforest.owo.registration.reflect.FieldRegistrationHandler;
 
 public class Moxplore implements ModInitializer {
@@ -33,18 +34,7 @@ public class Moxplore implements ModInitializer {
 		FieldRegistrationHandler.register(ModBlocks.class, MOD_ID, false);
 		FieldRegistrationHandler.register(ModItems.class, MOD_ID, false);
 		
-		CustomPortalBuilder.beginPortal()  
-        .frameBlock(Blocks.CRYING_OBSIDIAN)  
-        .lightWithItem(Items.POTION)  
-        .destDimID(new Identifier("moxplore:downside"))  
-        .tintColor(84, 65, 136)  
-        .registerPortal();
-
-		CustomPortalBuilder.beginPortal()  
-        .frameBlock(Blocks.POLISHED_DEEPSLATE)  
-        .destDimID(new Identifier("moxplore:plains"))  
-        .tintColor(95, 199, 45)  
-        .registerPortal();
+		ModPortals.init();
 		
 		
 	}
