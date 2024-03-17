@@ -1,4 +1,7 @@
 {
+
+"itemGroup.moxplore.moxplore_group":"Moxplore",
+
 "item.moxplore.copper_pickaxe":"Copper Pickaxe",
 "item.moxplore.copper_axe":"Copper Axe",
 "item.moxplore.copper_shovel":"Copper Shovel",
@@ -12,6 +15,7 @@
 "item.moxplore.iron_hammer.tooltip":"5x5x5 Cube",
 "item.moxplore.hammer.tooltip":"3x3x3 Cube",
 "item.moxplore.netherite_hammer.tooltip":"9x9x9 Cube",
+"item.moxplore.gold_hammer.tooltip":"5x5x5 Cube",
 
 "item.moxplore.copper_hammer":"Copper Hammer",
 "item.moxplore.iron_hammer":"Iron Hammer",

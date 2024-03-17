@@ -1,4 +1,5 @@
 package io.github.caleb67.moxplore.register;
+
 import io.wispforest.owo.registration.reflect.BlockRegistryContainer;
 import net.minecraft.block.Block;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;

@@ -1,9 +1,12 @@
 package io.github.caleb67.moxplore;
 
 import net.fabricmc.api.ModInitializer;
-import net.kyrptonaught.customportalapi.api.CustomPortalBuilder;
-import net.minecraft.block.Blocks;
-import net.minecraft.item.Items;
+import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 import org.slf4j.Logger;
@@ -13,6 +16,7 @@ import io.github.caleb67.moxplore.register.ModEquipment;
 import io.github.caleb67.moxplore.register.ModBlocks;
 import io.github.caleb67.moxplore.register.ModItems;
 import io.github.caleb67.moxplore.register.ModPortals;
+
 import io.wispforest.owo.registration.reflect.FieldRegistrationHandler;
 
 public class Moxplore implements ModInitializer {
@@ -21,6 +25,37 @@ public class Moxplore implements ModInitializer {
 	// That way, it's clear which mod wrote info, warnings, and errors.
     public static final Logger LOGGER = LoggerFactory.getLogger("moxplore");
 	public static final String MOD_ID = "moxplore";
+
+	private static final ItemGroup MOXLPORE_GROUP = FabricItemGroup.builder()
+			.icon(() -> new ItemStack(ModEquipment.COPPER_HAMMER))
+			.displayName(Text.translatable("itemGroup.moxplore.moxplore_group"))
+			.entries((context, entries) -> {
+				entries.add(ModEquipment.COPPER_HAMMER);
+				entries.add(ModEquipment.IRON_HAMMER);
+				entries.add(ModEquipment.GOLD_HAMMER);
+				entries.add(ModEquipment.DIAMOND_HAMMER);
+				entries.add(ModEquipment.NETHERITE_HAMMER);
+				entries.add(ModEquipment.COPPER_AXE);
+				entries.add(ModEquipment.COPPER_HOE);
+				entries.add(ModEquipment.COPPER_PICKAXE);
+				entries.add(ModEquipment.COPPER_SHOVEL);
+				entries.add(ModEquipment.COPPER_SWORD);
+				entries.add(ModItems.WATER_FILTER);
+				entries.add(ModBlocks.CHISELED_ACACIA_PLANKS);
+				entries.add(ModBlocks.CHISELED_BAMBOO_PLANKS);
+				entries.add(ModBlocks.CHISELED_BIRCH_PLANKS);
+				entries.add(ModBlocks.CHISELED_CHERRY_PLANKS);
+				entries.add(ModBlocks.CHISELED_CRIMSON_PLANKS);
+				entries.add(ModBlocks.CHISELED_DARK_OAK_PLANKS);
+				entries.add(ModBlocks.CHISELED_JUNGLE_PLANKS);
+				entries.add(ModBlocks.CHISELED_MANGROVE_PLANKS);
+				entries.add(ModBlocks.CHISELED_OAK_PLANKS);
+				entries.add(ModBlocks.CHISELED_SPRUCE_PLANKS);
+				entries.add(ModBlocks.CHISELED_WARPED_PLANKS);
+				entries.add(ModBlocks.NEAT_COBBLED_DEEPSLATE);
+				entries.add(ModBlocks.NEAT_COBBLESTONE);
+			})
+			.build();
 
 	@Override
 	public void onInitialize() {
@@ -33,6 +68,9 @@ public class Moxplore implements ModInitializer {
 		FieldRegistrationHandler.register(ModEquipment.class, MOD_ID, false);
 		FieldRegistrationHandler.register(ModBlocks.class, MOD_ID, false);
 		FieldRegistrationHandler.register(ModItems.class, MOD_ID, false);
+
+
+		Registry.register(Registries.ITEM_GROUP, new Identifier("moxplore", "moxplore"), MOXLPORE_GROUP);
 		
 		ModPortals.init();
 		
