@@ -36,6 +36,7 @@ public class WaterOrb extends Item {
         world.playSound(null, user.getX(), user.getY(), user.getZ(), SoundEvents.AMBIENT_UNDERWATER_EXIT, SoundCategory.NEUTRAL, 0.5f, 0.4f / (world.getRandom().nextFloat() * 0.4f + 0.8f));
         user.getItemCooldownManager().set(this, 200);
         user.addStatusEffect(new StatusEffectInstance(StatusEffects.WATER_BREATHING, 1200, 1));
+        user.addStatusEffect(new StatusEffectInstance(StatusEffects.CONDUIT_POWER, 1200, 1));
         if (!user.getAbilities().creativeMode) {
             itemStack.decrement(1);
         }
